@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Montserrat&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  }
+
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+      text-decoration: none;
+      color: inherit;
+      margin: 2px;
+  }
+  
+  /* NAVBAR */
+  
+  .navbar {
+    background-color: rgb(251, 132, 132);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    height: 104px;
+  }
+  
+  .navbar__logo {
+    max-width: 200px;
+  }
+  
+  .navbar__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .navbar__nav {
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+  }
+  
+
+.navbar__nav > li {
+    margin: 0 16px;
+    font-weight: bold;
+  }
+  /* -------------------------------------------------------------------------------- */
+  
+  
+  /* HEADER */
+  
+  .header{
+    min-height:88vh;
+    width: 100%;
+    background: cover;
+    background-image: url(../img/dilmaheader.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content:center;
+
+  }
+       
+  /* SECAO Maravilhosa */
+  
+  .container {
+    max-width:960px;
+    margin: 0 auto;
+    text-decoration: bold;
+    color:red;
+     
+  }
+  .container h2  {
+   
+    font-size: 36px;
+    margin: 26px auto;
+    text-align: center;
+    transform: rotate(0.31deg);
+    color:red;
+    font-weight: bold;
+  }
+  
+  .container-minibio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 48px;
+    margin:  0 auto;
+
+  }
+
+  .container-minibio-img img{
+    width: 200px;
+    height: 200px;
+    left: 450px;
+    top: 820px;
+    margin: 10px;
+    border-radius: 16px;
+
+  }
+
+  .citacao{
+     
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 66px;
+    text-align: center;
+    margin: 80px;
+    align-items: center;
+ 
+  }
+
+
+
+  /* AUTORA */
+  
+.sobre-autora__container{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  background-color: rgb(251, 132, 132);
+  }
+  .sobre-autora__texto{
+    color:#63458A;
+    font-size: 30px;
+     }
+
+  .img-autora{
+    width:15%;
+  border-radius: 50%;
+  margin: 16px;
+
+  }
+  .estilo-obras{
+    display: flex;
+  }
+  /* FOOTER */
+  
+  .rodape {
+    background-color: rgb(251, 132, 132);
+    color: white;
+  }
+  .rodape__principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .rodape__principal > * {
+    margin: 16px 0;
+  }
+  
+  .rodape__navegacao > li {
+    font-size: 14px;
+    margin: 8px;
+  }
+  
+  .rodape__navegacao a {
+    transition: all 0.5s;
+  }
+  
+  .rodape__navegacao a:hover {
+    color:rgb(245, 72, 72);
+  }
+  
+  .rodape__logo {
+    max-width: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rodape__cc {
+    width: 100%;
+    background-color: #292a2a;
+    font-size: 14px;
+    opacity: 0.5;
+    text-align: center;
+    padding: 10px;
+  }
+  /* MEDIA QUERY */
+
+  @media screen and (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+     
+    }
+   .header{
+      background-repeat:round;
+
+   }
+   section img {
+    width:100%;
+  }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 656px;
+      margin: 10px;
+    }
+    section img {
+      width:100%;
+    }
+  }
